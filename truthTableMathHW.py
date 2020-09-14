@@ -43,7 +43,7 @@ def comparison(a, b, operation):
 	comp_or            = lambda x, y: x or y
 	comp_xor           = lambda x, y: x != y
 	comp_biconditional = lambda x, y: x == y
-	comp_mc            = lambda x, y: 1 if x else y
+	comp_mc            = lambda x, y: 1 if x == 0 else y
 
 	comparators = {
 				   "&"   : comp_and, 
